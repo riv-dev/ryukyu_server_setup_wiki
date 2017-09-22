@@ -219,3 +219,21 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
 Now whenever the server reboots, it will read the fstab file and start the swap properly.
 ### Tweak Swap File Settings
+We want to tweak some swap parameters, more information about it can be seen in the original tutorial link.
+1. Set the "swappiness" of the swap
+```
+sudo sysctl vm.swappiness=10
+```
+2. Make it permanent by adding to /etc/sysctl.conf.  Open /etc/systcl.conf with text editor and add the following to the bottom:
+```
+vm.swappiness=10
+```
+3. Adjust "cache pressure" setting:
+```
+sudo sysctl vm.vfs_cache_pressure=50
+```
+4. Add the following line to the end of /etc/sysctl.conf.
+```
+vm.vfs_cache_pressure=50
+```
+5. Save and exit.  We are now done, your server is setup to have 1G swap memory.
