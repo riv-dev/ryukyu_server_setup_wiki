@@ -199,4 +199,23 @@ sudo mkswap /swapfile
 ```
 sudo swapon /swapfile
 ```
-
+4. Verify the swap available:
+```
+sudo swapon --show
+```
+5. We can also verify with:
+```
+free -h
+```
+### Make the swap file permanent
+We need to setup so that when we reboot the server, the swap file remains set properly.
+1. Backup current fstab file
+```
+sudo cp /etc/fstab /etc/fstab.bak
+```
+2. Add swap file information to fstab file
+```
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+Now whenever the server reboots, it will read the fstab file and start the swap properly.
+### Tweak Swap File Settings
