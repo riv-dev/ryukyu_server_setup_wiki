@@ -278,11 +278,29 @@ character-set-server = utf8
 sudo /etc/init.d/mysql stop
 sudo /etc/init.d/mysql start
 ```
+## Install Git on the server
+You will need Git to download Ryukyu Social source code.  Log onto your server and type the following:
+```
+sudo apt-get update
+sudo apt-get install git
+```
 
 ## Install Code Checker on the server
-Ryukyu Social has code checker integration.  In order to use code checker, it must be installed.
+Ryukyu Social has code checker integration.  In order to use code checker, it must be installed on the server.
 
-1. Install code checker by following instructions at: [https://github.com/riv-dev/code_checker](https://github.com/riv-dev/code_checker)
+1. Log onto your server and install code checker by following instructions at: [https://github.com/riv-dev/code_checker](https://github.com/riv-dev/code_checker)
+
+## Download Ryukyu Social Source Code
+1. Log onto your server.  In your home directory (for example "riv"), create a folder called "apps".
+```
+cd ~/
+mkdir apps
+```
+2. Go into your apps directory and clone Ryukyu Social source code from Github.  Clone master branch and stable branches separately.
+Clone the backend master branch
+```
+git clone https://github.com/riv-dev/ryukyu_social_backend.git
+```
 
 
 
