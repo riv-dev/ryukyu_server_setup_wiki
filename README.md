@@ -157,6 +157,19 @@ Output
 Mem:           488M         36M        104M        652K        348M        426M
 Swap:            0B          0B          0B
 ```
+3. Check how much space you currently have on your hard-disk:
+```
+df -h
+```
+Output
+Filesystem      Size  Used Avail Use% Mounted on
+udev            238M     0  238M   0% /dev
+tmpfs            49M  624K   49M   2% /run
+**/dev/vda1        20G  1.1G   18G   6% /**
+tmpfs           245M     0  245M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           245M     0  245M   0% /sys/fs/cgroup
+tmpfs            49M     0   49M   0% /run/user/1001
 
 
 
