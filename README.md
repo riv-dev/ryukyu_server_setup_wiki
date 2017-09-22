@@ -23,7 +23,7 @@ adduser riv
 usermod -aG sudo riv
 ```
 
-4. Check if you already have a local ssh-key on your computer.  Start a new Terminal and type the following on the command line:
+4. Check if you already have a local ssh-key on your local computer (Macbook).  Start a new Terminal and type the following on the command line:
 ```
 ls ~/.ssh
 ```
