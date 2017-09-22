@@ -23,7 +23,7 @@ adduser riv
 usermod -aG sudo riv
 ```
 
-4. Check if you already have a local ssh-key on your local computer (Macbook).  Start a new Terminal and type the following on the command line:
+4. We will now setup so we can log into the server with ssh-keys instead of using a password.  It is insecure to use a password to log into your server because if anyone finds out your password, anyone can log into your server from anywhere in the world. Check if you already have a local ssh-key on your local computer (Macbook).  Start a new Terminal and type the following on the command line:
 ```
 ls ~/.ssh
 ```
