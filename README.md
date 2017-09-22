@@ -94,7 +94,7 @@ PasswordAuthentication no
 
 3. Save and exit the text editor.  If you are using nano, save and exit by typing "CTRL X", "y", then "Enter".
 
-4. Restart the ssh daemon.
+4. Restart the ssh daemon:
 ```
 sudo systemctl reload sshd
 ```
