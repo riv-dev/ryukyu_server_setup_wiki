@@ -108,7 +108,22 @@ ssh riv@server_ip_address
 
 ### Set up basic Firewall
 
-1.  You want to close all ports for your server, and only open the ports that are required for your web server.
+1.  We will want to start a firewall to block all ports, and open only the ports that we need.  We can list the current ports that the fire wall allows by typing the following:
+```
+sudo ufw app list
+```
+2.  If it is not already in the list, we want to open "SSH" port so that we can log into our server with ssh as before.  Type the following:
+```
+sudo ufw allow OpenSSH
+```
+3. Now enable the firewall:
+```
+sudo ufw enable
+```
+4. View the status of the firewall by typing the following:
+```
+sudo ufw status
+```
 
 
 
