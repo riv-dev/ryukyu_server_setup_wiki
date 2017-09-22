@@ -141,7 +141,7 @@ sudo ufw status
 ```
 
 ## Setup Swap Memory
-Ryukyu Social uses more than 512mb or ram.  This could be a problem if our server only has 512mb of ram, the app will crash.  In order to get around this, we can add "virtual" ram, AKA swap memory.  What we are doing is setting up our server to use our hard-disk memory when it runs our of ram memory.  This results in slower operation, but the advantage is our application will not crash.  If you wish, you may upgrade to a more expensive server with more ram.
+Ryukyu Social uses more than 512mb of ram.  This could be a problem if our server only has 512mb of ram, the app will crash.  In order to get around this, we can add "virtual" ram, AKA swap memory.  What we are doing is setting up our server to use our hard-disk memory when it runs our of ram memory.  This results in slower operation, but the advantage is our application will not crash.  If you wish, you may upgrade to a more expensive server with more ram.
 
 
 
