@@ -187,5 +187,16 @@ sudo fallocate -l 1G /swapfile
 ls -lh /swapfile
 ```
 ### Enable Swap File
-1. 
+1. Set permissions for the file:
+```
+sudo chmod 600 /swapfile
+```
+2. Mark the file as swap space:
+```
+sudo mkswap /swapfile
+```
+3. Enable the swap file:
+```
+sudo swapon /swapfile
+```
 
