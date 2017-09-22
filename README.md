@@ -92,6 +92,11 @@ sudo nano /etc/ssh/sshd_config
 PasswordAuthentication no
 ```
 
-3. If you are using nano, save and exit by typing "CTRL X", "y", then "Enter".  Otherwise save and exit according to your text editor.
+3. Save and exit the text editor.  If you are using nano, save and exit by typing "CTRL X", "y", then "Enter".
+
+4. Restart the ssh daemon.
+```
+sudo systemctl reload sshd
+```
 
 
