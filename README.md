@@ -253,7 +253,25 @@ Ryukyu Social uses NodeJS and MySQL for it's backend.  We will use PM2 to manage
 To allow MySQL to use Japanese characters, perform the following.  Original information found here: [https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf](https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf)
 
 1. Open /etc/mysql/my.cnf and make sure it has the following:
-<img src="mysql_cnf.png" width="50%" />
+```
+[mysqld]
+bind-address=0.0.0.0
+
+[client]
+default-character-set=utf8
+
+[mysql]
+default-character-set=utf8
+
+
+[mysqld]
+collation-server = utf8_unicode_ci
+init-connect='SET NAMES utf8'
+character-set-server = utf8
+
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mysql.conf.d/
+```
 
 
 
