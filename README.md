@@ -243,4 +243,10 @@ We now want to set up our server to have a domain name.  To do this, we first ha
 
 1. Follow the original tutorial here to setup your domain name: [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean)
 
+## Install NGINX, MySQL, NodeJS, and PM2
+Ryukyu Social uses NodeJS and MySQL for it's backend.  We will use PM2 to manage our NodeJS instances.  Finally, we will use NGINX as a proxy server to forward http requests to our backend NodeJS applications.  Follow the following tutorials to install these applications appropriately.
+1. Install NGINX: [https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04)
+2. Install MySQL: [https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)
+3. Install NodeJS and PM2: [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04)
+
 
