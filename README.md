@@ -29,7 +29,7 @@ ls ~/.ssh
 ```
 If you see "id_rsa" and "id_rsa.pub" it means you already have an ssh-key, you may skip step 5.  If you do not, then you don't have one yet, follow step 5.
 
-5. Create an ssh-key on your local computer.  Start a new Terminal and type and execute the following on your local machine:
+5. Create an ssh-key on your local computer.  Start a new Terminal and type and execute the following on your local machine.  Accept all defaults by pressing enter.  You do not need to enter a passphrase, leave empty and hit enter.:
 ```
 ssh-keygen
 ```
