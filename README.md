@@ -1,0 +1,1 @@
+# ryukyu_server_setup_wiki
