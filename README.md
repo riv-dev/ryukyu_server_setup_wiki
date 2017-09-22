@@ -49,5 +49,24 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBGTO0tsVejssuaYR5R3Y/i73SppJAhme1dH7W2c47
 su - riv
 ```
 
-8.  
+8.  You will now be in the home directory for "riv" user.  Make a .ssh folder and set permissions for it.
+```
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+```
+
+9.  **Create "authorized_keys" file**.  Use "vim" or "nano" to create the file.  For example with nano:
+```
+nano ~/.ssh/authorized_keys
+```
+Save and exit by typing "CTRL X", press "y" then "Enter".
+
+10. Set permissions for the new file:
+```
+chmod 600 ~/.ssh/authorized_keys
+```
+11. Switch back to the "root" user by typing:
+```
+exit
+```
 
