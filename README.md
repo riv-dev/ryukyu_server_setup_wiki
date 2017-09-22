@@ -29,7 +29,7 @@ adduser riv
 usermod -aG sudo riv
 ```
 
-### Add Public Key Authentication
+### Add Public Key Authentication (Optional but recommended)
 
 1. **We will now setup so we can log into the server with ssh-keys instead of using a password.**  It is insecure to use a password to log into your server because if anyone finds out your password, anyone can log into your server from anywhere in the world. Check if you already have a local ssh-key on your local computer (Macbook).  Start a new Terminal and type the following on the command line:
 ```
@@ -78,5 +78,20 @@ chmod 600 ~/.ssh/authorized_keys
 exit
 ```
 
-### Disable Password Authentication
+9. Repeat steps 1-8 for other computers that you wish to allow access to the server.
+
+### Disable Password Authentication (Optional but recommended)
+
+1.  **We will now disable password log in** so that users can only log into the server if they have a ssh-key pair that matches with the server. (done in the previous step).  To do this first open the following file with vim or nano (make sure you are logged into your server as "root"):
+```
+sudo nano /etc/ssh/sshd_config
+```
+
+2. Find the following line and set it to "no"
+```
+PasswordAuthentication no
+```
+
+3. If you are using nano, save and exit by typing "CTRL X", "y", then "Enter".  Otherwise save and exit according to your text editor.
+
 
