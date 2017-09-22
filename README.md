@@ -104,7 +104,13 @@ sudo systemctl reload sshd
 ```
 ssh riv@server_ip_address
 ```
-3. If everything is right, you should now be logged into your server as user "riv".  You may now exit the terminal that was logged in as "root".  Stay in this terminal as "riv".
+3. If everything is right, you should now be logged into your server as user "riv".  You may now exit the terminal that was logged in as "root".
+
+### Set up basic Firewall
+
+1.  You want to close all ports for your server, and only open the ports that are required for your web server.
+
+
 
 
 
