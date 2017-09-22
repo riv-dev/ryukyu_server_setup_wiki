@@ -98,5 +98,13 @@ PasswordAuthentication no
 ```
 sudo systemctl reload sshd
 ```
+### Test remote log in with "riv" 
+1. In case this step does not work, do not exit terminal that is logged in with "root".  
+2. Start a new terminal and type the following:
+```
+ssh riv@server_ip_address
+```
+3. If everything is right, you should now be logged into your server as user "riv".  You may now exit the terminal that was logged in as "root".  Stay in this terminal as "riv".
+
 
 
