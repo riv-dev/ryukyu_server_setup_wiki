@@ -273,5 +273,11 @@ character-set-server = utf8
 !includedir /etc/mysql/mysql.conf.d/
 ```
 
+2. Restart mysql:
+```
+sudo /etc/init.d/mysql stop
+sudo /etc/init.d/mysql start
+```
+
 
 
