@@ -10,3 +10,5 @@ The first thing you need to do is set bare minimum settings for server security.
 ```
 ssh root@server_ip_address
 ```
+
+ a. If you forgot your root password, you can reset it by logging into your Digital Ocean account, selecting your droplet, select "access", and reset root password.
