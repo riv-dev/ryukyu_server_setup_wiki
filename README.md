@@ -143,7 +143,20 @@ sudo ufw status
 ## Setup Swap Memory
 Ryukyu Social uses more than 512mb of ram.  This could be a problem if our server only has 512mb of ram, the app will crash.  In order to get around this, we can add "virtual" ram, AKA swap memory.  What we are doing is setting up our server to use our hard-disk memory (as virtual ram) when it runs out of actual ram memory.  Virtual RAM is a lot slower than actual RAM (because we are using the hard-disk), however the advantage is our application will not crash if it runs out of actual RAM.
 
-
+1. Check if your server already has swap memory setup. If there is no output, it means there is no swap memory.
+```
+sudo swapon --show
+```
+2. Verify there is no active swap with:
+```
+free -h
+```
+```
+Output
+              total        used        free      shared  buff/cache   available
+Mem:           488M         36M        104M        652K        348M        426M
+Swap:            0B          0B          0B
+```
 
 
 
