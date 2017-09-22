@@ -279,5 +279,10 @@ sudo /etc/init.d/mysql stop
 sudo /etc/init.d/mysql start
 ```
 
+## Install Code Checker on the server
+Ryukyu Social has code checker integration.  In order to use code checker, it must be installed.
+
+1. Install code checker by following instructions at: [https://github.com/riv-dev/code_checker](https://github.com/riv-dev/code_checker)
+
 
 
