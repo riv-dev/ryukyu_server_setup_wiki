@@ -161,6 +161,7 @@ Swap:            0B          0B          0B
 ```
 df -h
 ```
+```
 Output
 Filesystem      Size  Used Avail Use% Mounted on
 udev            238M     0  238M   0% /dev
@@ -170,6 +171,6 @@ tmpfs           245M     0  245M   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
 tmpfs           245M     0  245M   0% /sys/fs/cgroup
 tmpfs            49M     0   49M   0% /run/user/1001
-
+```
 
 
