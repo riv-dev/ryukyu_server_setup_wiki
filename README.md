@@ -125,6 +125,21 @@ sudo ufw enable
 sudo ufw status
 ```
 
+## Basic Firewall Setup
+Below is a quick summary of firewall settings for our server.  For detailed information on how to setup the firewall visit [https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+
+1. Allow **http** and **https** connections to our server.
+```
+sudo ufw allow http
+```
+```
+sudo ufw allow https
+```
+2. View the firewall status. That is it, we do not wish to allow any other kinds of connections to our Ryukyu Social server.
+```
+sudo ufw status
+```
+
 
 
 
