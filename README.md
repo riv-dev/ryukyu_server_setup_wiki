@@ -2,7 +2,7 @@
 
 This tutorial assumes you have a Linux server.
 
-### Basic server setup
+## Basic server setup
 
 The first thing you need to do is set bare minimum settings for server security.  Here I will summarize quickly.  The original tutorial is here: [https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
 
@@ -77,4 +77,6 @@ chmod 600 ~/.ssh/authorized_keys
 ```
 exit
 ```
+
+### Disable Password Authentication
 
