@@ -143,6 +143,7 @@ sudo ufw status
 ## Setup Swap Memory
 Ryukyu Social uses more than 512mb of ram.  This could be a problem if our server only has 512mb of ram, the app will crash.  In order to get around this, we can add "virtual" ram, AKA swap memory.  What we are doing is setting up our server to use our hard-disk memory (as virtual ram) when it runs out of actual ram memory.  Virtual RAM is a lot slower than actual RAM (because we are using the hard-disk), however the advantage is our application will not crash if it runs out of actual RAM.  The original tutorial can be found here: [https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
 
+### Check the system for swap information
 1. Check if your server already has swap memory setup. If there is no output, it means there is no swap memory.
 ```
 sudo swapon --show
@@ -157,7 +158,8 @@ Output
 Mem:           488M         36M        104M        652K        348M        426M
 Swap:            0B          0B          0B
 ```
-3. Check how much space you currently have on your hard-disk:
+### Check available space on your hard-drive
+1. Check how much space you currently have on your hard-disk:
 ```
 df -h
 ```
@@ -174,5 +176,16 @@ tmpfs            49M     0   49M   0% /run/user/1001
 ```
 Above shows we are only using 1.1G of 20G.  Generally we want to add 1 to 2 times our RAM size for swap memory.  For example for a 512mb server, we may create 1G of swap memory.
 
-4.
+### Create Swap File
+1. Create 1G of swap memory (for a 512mb RAM server).  For any other server, just use double the amount of your RAM.
+```
+sudo fallocate -l 1G /swapfile
+```
+
+2. Verify the correct amount was reserved: 
+```
+ls -lh /swapfile
+```
+### Enable Swap File
+1. 
 
