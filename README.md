@@ -1,6 +1,6 @@
 # Ryukyu Social Server Setup
 
-This tutorial assumes you have a Linux server.
+This tutorial assumes you have a Linux server (Ubuntu perferred).
 
 ## Basic server setup
 
@@ -252,7 +252,8 @@ Ryukyu Social uses NodeJS and MySQL for it's backend.  We will use PM2 to manage
 ## Configure MySQL to be able to use Japanese characters
 To allow MySQL to use Japanese characters, perform the following.  Original information found here: [https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf](https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf)
 
-1. Do the following:
+1. Open /etc/mysql/my.cnf and make sure it has the following:
+
 
 
 
