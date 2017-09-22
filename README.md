@@ -172,5 +172,7 @@ tmpfs           5.0M     0  5.0M   0% /run/lock
 tmpfs           245M     0  245M   0% /sys/fs/cgroup
 tmpfs            49M     0   49M   0% /run/user/1001
 ```
+Above shows we are only using 1.1G of 20G.  Generally we want to add 1 to 2 times our RAM size for swap memory.  For example for a 512mb server, we may create 1G of swap memory.
 
+4.
 
