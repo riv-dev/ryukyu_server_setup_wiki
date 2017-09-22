@@ -237,3 +237,10 @@ sudo sysctl vm.vfs_cache_pressure=50
 vm.vfs_cache_pressure=50
 ```
 5. Save and exit.  We are now done, your server is setup to have 1G swap memory.
+
+## Domain Name Setup
+We now want to set up our server to have a domain name.  To do this, we first have to have a domain name registered.  For example, you can buy domain names at "GoDaddy.com".  For Ryukyu Social, we must have a domain name setup for our server because it uses subdomains.  The original tutorial can be seen here: [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean)
+
+1. 
+
+
