@@ -12,3 +12,8 @@ ssh root@server_ip_address
 ```
 (optional) If you forgot your root password, you can reset it by logging into your Digital Ocean account, selecting your droplet, select "access", and reset root password.
 <img src="root_pw_reset.png" />
+
+2. Create a new user for your server.  In the future, you do not want to log in as "root", it is not good practice to use the "root" account.  Choose a username, forexample "riv".  Type in a good password, and accept all defaults by pressing "Enter".
+```
+adduser riv
+```
