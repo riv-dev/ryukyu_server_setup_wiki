@@ -300,7 +300,7 @@ Ryukyu Social uses a "master" and "stable" branch workflow.  The source code has
 cd ~/
 mkdir backend
 ```
-2. Go into your backend directory and clone Ryukyu Social master branch from Github.  
+2. Go into your backend directory and clone the "master" branch of Ryukyu Social from GitHub.
 ```
 cd backend
 git clone https://github.com/riv-dev/ryukyu_social_backend.git
@@ -309,7 +309,7 @@ git clone https://github.com/riv-dev/ryukyu_social_backend.git
 ```
 mv ryukyu_social_backend ryukyu_social_backend_dev
 ```
-4. Now, clone the Ryukyu Social stable branch from Github.  Again make sure you are in the "backend" directory.
+4. Now, clone the "stable" branch.  Again make sure you are in the "backend" directory.
 ```
 git clone -b stable https://github.com/riv-dev/ryukyu_social_backend.git
 ```
