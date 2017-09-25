@@ -382,7 +382,7 @@ user_profile
 ```
 3. Repeat for "ryukyu_social_backend_prod".
 
-## Download and Load MySQL databases
+## Download and Import Existing MySQL databases
 If you are provided with MySQL dumps, at this time you may load all the dumps into MySQL.  Follow directions here to load MySQL dumps [https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql)
 
 ## Download and Run Backend Deployment Scripts
