@@ -291,6 +291,9 @@ Ryukyu Social has code checker integration.  In order to use code checker, it mu
 1. Log onto your server and install code checker by following instructions at: [https://github.com/riv-dev/code_checker](https://github.com/riv-dev/code_checker)
 
 ## Download Ryukyu Social Source Code
+Ryukyu Social uses a "master" and "stable" branch workflow.  The source code has a master branch, and a stable branch.  The master branch is used for continuous integration and testing of new features.  The master branch could be thought of as the "staging" branch where we stage our developmental changes before we release it into production.  Once we are happy if the state of our master branch (all code is working properly), we pull the master branch code into the stable branch.  Production is always running code from the stable branch only.  You can read more about this workflow here [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)
+
+
 1. Log onto your server.  In your home directory (for example "riv"), create a folder called "apps".
 ```
 cd ~/
