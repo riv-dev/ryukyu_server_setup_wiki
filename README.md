@@ -325,7 +325,7 @@ We will setup one credentials.js file, and create a symbolic link for each micro
 cd ryukyu_social_backend_dev
 cp tasks/credentials.example.js credentials.js
 ```
-2. Open credentials.js and edit the following.
+2. Open credentials.js and edit the following.  When done save and exit the text editor.
 ```
 module.exports = {
     mysql: {
@@ -335,7 +335,7 @@ module.exports = {
                 password : '<change to your MySQL password>'
         },
         production: {
-                host     : '<change to your server's IP address',
+                host     : '<change to your server's IP address>',
                 username     : '<change to your MySQL username>',
                 password : '<change to your MySQL password>'
         }
@@ -346,6 +346,21 @@ module.exports = {
         encryption_pw: "<choose a random string of letters and numbers e.g. afdjahfda2930329adaf>"
     }
 }
+```
+3.  Now we want to create a symbolic link for credentials.js in each of our microservices.  We will "user_management" service as an example.
+```
+cd user_management
+ln -s ../credentials.js .
+```
+4. Repleat the steps above for every nodejs microservice.  For example, at the time of this writing we have:
+```
+files
+project_photos
+projects
+tasks
+user_management
+user_photos
+user_profile
 ```
 
 
