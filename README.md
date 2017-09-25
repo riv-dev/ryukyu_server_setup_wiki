@@ -401,6 +401,8 @@ chmod ugo+x *
 ```
 ./deploy_stage.run
 ```
+Note, the developmental/staging backend will seed the development databases with fake data.
+
 5. You can check the status of each microservice by typing "pm2 list".  If everything is running and green then it is a good first step.
 ```
 pm2 list
@@ -413,13 +415,18 @@ pm2 logs <name of service> --lines=500
 ```
 pm2 restart <name of service>
 ```
-8. A good way to check that everything went well is to check the logs of each microservice to see if it started properly on the right port.  And to log into mysql and see if the databases and tables were created.
+8. A good way to verify that everything went well is to check the logs of each microservice to see if it started properly on the right port.  And to log into mysql and see if the databases and tables were created.
 ```
 mysql -u root -p
 show databases;
 use <database name>
 show tables;
 ```
+9. If everything seems ok, now we should deploy the production code.  No fake data will be seeded into the production databases.  The production backend is used for real data.
+```
+./deploy_production.run
+```
+10. You may check the production status similarly as above.
 
 
 
