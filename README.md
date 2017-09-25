@@ -457,3 +457,18 @@ cp server_settings.example.js server_settings.js
 ```
 5. Edit server_settings.js.  Make sure run_environment = "remote_development".  Also make sure all your API url's are pointing to the correct domain.
 
+6. Now we will repeat the steps for the production environment.  Go back into the frontend folder and clone the stable branch from GitHub.
+```
+cd ~/frontend
+git clone -b stable https://github.com/riv-dev/ryukyu_social_ui.git
+```
+7. Rename the folder to ryukyu_social_ui_prod
+```
+mv ryukyu_social_ui ryukyu_social_ui_prod
+```
+8. Create server_settings.js similar to step 4.
+``` 
+cd ryukyu_social_ui_prod/javascripts/config
+cp server_settings.example.js server_settings.js
+```
+9. Edit server_settings.js.  Make sure run_environment = "production".
