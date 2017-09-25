@@ -347,12 +347,12 @@ module.exports = {
     }
 }
 ```
-3.  Now we want to create a symbolic link for credentials.js in each of our microservices.  We will "user_management" service as an example.
+3.  Now we want to create a symbolic link for credentials.js in each of our microservices.  We will do "user_management" service as an example.
 ```
 cd user_management
 ln -s ../credentials.js .
 ```
-4. Repleat the steps above for every nodejs microservice.  For example, at the time of this writing we have:
+4. Repeat the steps above for every nodejs microservice.  For example, at the time of this writing we have:
 ```
 files
 project_photos
@@ -361,6 +361,25 @@ tasks
 user_management
 user_photos
 user_profile
+```
+5.  Repeat steps 1-4 for the production code.  Change into "ryukyu_social_backend_prod" directory and do the same.
+### Install NPM modules
+We have to install all NPM modules for our code to work properly.  Go into each microservice in both "ryukyu_social_backend_dev" and "ryukyu_social_backend_prod" and run "npm install".  For example:
+```
+cd ryukyu_social_backend_dev
+cd user_management
+npm install
+```
+Repeat for all microservices:
+```
+files
+project_photos
+projects
+tasks
+user_management
+user_photos
+user_profile
+```
 ```
 
 
