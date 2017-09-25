@@ -318,6 +318,36 @@ git clone -b stable https://github.com/riv-dev/ryukyu_social_backend.git
 mv ryukyu_social_backend ryukyu_social_backend_prod
 ```
 
+### Setup credentials.js file
+We will setup one credentials.js file, and create a symbolic link for each microservice.  This way if our credentials changes, we only have to change one file, instead of changing many.
+1. Change into the ryukyu_social_backend_dev directory and copy credentials.example.js from the tasks service into the ryukyu_social_backend_dev directory
+```
+cd ryukyu_social_backend_dev
+cp tasks/credentials.example.js credentials.js
+```
+2. Open credentials.js and edit the following.
+```
+module.exports = {
+    mysql: {
+        development: {
+                host     : '<change to your server's IP address>',
+                username     : '<change to your MySQL username>',
+                password : '<change to your MySQL password>'
+        },
+        production: {
+                host     : '<change to your server's IP address',
+                username     : '<change to your MySQL username>',
+                password : '<change to your MySQL password>'
+        }
+    },
+    authentication: {
+        secret: '<choose a random string of letters and numbers e.g. ad80fjadf023dg9aae8382>',
+        development_token: "",
+        encryption_pw: "<choose a random string of letters and numbers e.g. afdjahfda2930329adaf>"
+    }
+}
+```
+
 
 
 
