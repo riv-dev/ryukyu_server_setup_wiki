@@ -293,17 +293,32 @@ Ryukyu Social has code checker integration.  In order to use code checker, it mu
 ## Download Ryukyu Social Source Code
 Ryukyu Social uses a "master" and "stable" branch workflow.  The source code has a master branch, and a stable branch.  The master branch is used for continuous integration and testing of new features.  The master branch could be thought of as the "staging" branch where we stage our developmental changes before we release it into production.  Once we are happy if the state of our master branch (all code is working properly), we pull the master branch code into the stable branch.  Production is always running code from the stable branch only.  You can read more about this workflow here [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)
 
+### Clone and setup Ryukyu Social backend code
 
-1. Log onto your server.  In your home directory (for example "riv"), create a folder called "apps".
+1. Log onto your server.  In your home directory (for example "riv"), create a folder called "backend".
 ```
 cd ~/
-mkdir apps
+mkdir backend
 ```
-2. Go into your apps directory and clone Ryukyu Social source code from Github.  Clone master branch and stable branches separately.
-Clone the backend master branch
+2. Go into your backend directory and clone Ryukyu Social master branch from Github.  
 ```
+cd backend
 git clone https://github.com/riv-dev/ryukyu_social_backend.git
 ```
+3. Change the name of the folder to "ryukyu_social_backend_dev"
+```
+mv ryukyu_social_backend ryukyu_social_backend_dev
+```
+This will be the backend used for staging and testing our developmental changes.
+4. Now, clone the Ryukyu Social stable branch from Github.  Again make sure you are in the "backend" directory.
+```
+git clone -b stable https://github.com/riv-dev/ryukyu_social_backend.git
+```
+5. Change the name of the folder to "ryukyu_social_backend_prod".  This will be the production backend, the actual backend the users will use.
+```
+mv ryukyu_social_backend ryukyu_social_backend_prod
+```
+
 
 
 
