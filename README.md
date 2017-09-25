@@ -495,4 +495,6 @@ sudo systemctl restart nginx
 ## Create HTTPS certificates
 Create certificates for HTTPS.  Original information can be found here [https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 [https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04)
-
+1. Create certificate with certbot (it will be inside /certbot/live folder as .pem, etc.)
+2. Create .conf file in /etc/nginx/snippets pointing to files above
+3. Edit /etc/nginx/site-enabled/default to include snippets
