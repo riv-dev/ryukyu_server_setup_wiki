@@ -381,6 +381,10 @@ user_photos
 user_profile
 ```
 3. Repeat for "ryukyu_social_backend_prod".
+
+## Download and Load MySQL databases
+If you are provided with MySQL dumps, at this time you may load all the dumps into MySQL.  Follow directions here to load MySQL dumps [https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql)
+
 ## Download and Run Backend Deployment Scripts
 Technically, you could start each NodeJS microservice manually by changing into the directory and typing "node app.js".  This would be very tedious however every time you make changes to the code and need to restart each service, or if you ever need to reboot the server.  For this reason, there are deployment scripts that start and restart each microservice automatically.
 1. Change into the "backend" directory and clone the backend deployment scripts from GitHub.
@@ -427,7 +431,6 @@ show tables;
 ./deploy_production.run
 ```
 10. You may check the production status similarly as above.
-
 
 
 
