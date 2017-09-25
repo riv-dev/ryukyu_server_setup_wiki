@@ -381,6 +381,23 @@ user_photos
 user_profile
 ```
 3. Repeat for "ryukyu_social_backend_prod".
+## Download and Run Backend Deployment Scripts
+Technically, you could start each NodeJS microservice manually by changing into the directory and typing "node app.js".  This would be very tedious however every time you make changes to the code and need to restart each service, or if you ever need to reboot the server.  For this reason, there are deployment scripts that start and restart each microservice automatically.
+1. Change into the "backend" directory and clone the backend deployment scripts from GitHub.
+```
+cd backend
+git clone https://github.com/riv-dev/ryukyu_social_backend_deployment_scripts.git
+```
+2. Move all the files into "backend" and remove the cloned folder.
+```
+mv ryukyu_social_backend_deployment_scripts/* .
+rm -rf ryukyu_social_backend_deployment_scripts
+```
+3. Make sure you have execute access on all the files
+```
+chmod ugo+x *
+```
+
 
 
 
