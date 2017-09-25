@@ -397,6 +397,29 @@ rm -rf ryukyu_social_backend_deployment_scripts
 ```
 chmod ugo+x *
 ```
+4. We will first make sure everything works for development before we do it for production. Deploy all the "development/staging" microservices.  To do this run the "deploy_stage.run" script.
+```
+./deploy_stage.run
+```
+5. You can check the status of each microservice by typing "pm2 list".  If everything is running and green then it is a good first step.
+```
+pm2 list
+```
+6. At any time you can read the log output of a microservice by typing:
+```
+pm2 logs <name of service> --lines=500
+```
+7. At any time you may restart a microservice by typing:
+```
+pm2 restart <name of service>
+```
+8. A good way to check that everything went well is to check the logs of each microservice to see if it started properly on the right port.  And to log into mysql and see if the databases and tables were created.
+```
+mysql -u root -p
+show databases;
+use <database name>
+show tables;
+```
 
 
 
