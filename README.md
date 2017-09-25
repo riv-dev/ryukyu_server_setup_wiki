@@ -450,7 +450,10 @@ git clone https://github.com/riv-dev/ryukyu_social_ui.git
 ```
 mv ryukyu_social_ui ryukyu_social_ui_dev
 ```
-3. Go into the javascripts directory and create server_settings.js file from the server_settings.example.js file.
+4. Go into the ryukyu_social_ui_dev/javascripts/config directory and create server_settings.js file from the server_settings.example.js file.
 ```
-
+cd ryukyu_social_ui_dev/javascripts/config
+cp server_settings.example.js server_settings.js
+```
+5. Edit server_settings.js.  Make sure run_environment = "remote_development".  Also make sure all your API url's are pointing to the correct domain.
 
