@@ -472,3 +472,24 @@ cd ryukyu_social_ui_prod/javascripts/config
 cp server_settings.example.js server_settings.js
 ```
 9. Edit server_settings.js.  Make sure run_environment = "production".
+
+## Setup NGINX HTTP Server
+NGINX is used to forward HTTP requests to the backend code.  It is also used to serve the front end code to the client.  In this section we will setup the NGINX server.
+
+1. Log onto the server.  Clone the Ryukyu Social NGINX configuration from GitHub.
+```
+https://github.com/riv-dev/ryukyu_social_nginx_scripts
+```
+2. Replace the default NGINX file with the file that was just downloaded.  You must do this using "sudo" privileges.
+```
+sudo mv ryukyu_social_nginx_scripts/default /etc/nginx/sites-available/default
+```
+3. Open the "default" file and edit as nessacary for your server.
+```
+sudo vim /etc/nginx/sites-available/default
+````
+4. Restart NGINX
+```
+sudo systemctl restart nginx
+```
+
