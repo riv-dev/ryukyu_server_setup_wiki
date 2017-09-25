@@ -364,13 +364,13 @@ user_profile
 ```
 5.  Repeat steps 1-4 for the production code.  Change into "ryukyu_social_backend_prod" directory and do the same.
 ### Install NPM modules
-We have to install all NPM modules for our code to work properly.  Go into each microservice in both "ryukyu_social_backend_dev" and "ryukyu_social_backend_prod" and run "npm install".  For example:
+1. We have to install all NPM modules for our code to work properly.  Go into each microservice in both "ryukyu_social_backend_dev" and "ryukyu_social_backend_prod" and run "npm install".  For example:
 ```
 cd ryukyu_social_backend_dev
 cd user_management
 npm install
 ```
-Repeat for all microservices:
+2. Repeat for all microservices:
 ```
 files
 project_photos
@@ -380,7 +380,7 @@ user_management
 user_photos
 user_profile
 ```
-```
+3. Repeat for "ryukyu_social_backend_prod".
 
 
 
