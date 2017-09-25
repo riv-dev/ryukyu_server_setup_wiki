@@ -291,7 +291,7 @@ Ryukyu Social has code checker integration.  In order to use code checker, it mu
 1. Log onto your server and install code checker by following instructions at: [https://github.com/riv-dev/code_checker](https://github.com/riv-dev/code_checker)
 
 ## Download Ryukyu Social Source Code
-Ryukyu Social uses a "master" and "stable" branch workflow.  The source code has a master branch, and a stable branch.  The master branch is used for continuous integration and testing of new features.  The master branch could be thought of as the "staging" branch where we stage our developmental changes before we release it into production.  Once we are happy if the state of our master branch (all code is working properly), we pull the master branch code into the stable branch.  Production is always running code from the stable branch only.  You can read more about this workflow here [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)
+Ryukyu Social uses a "master" and "stable" branch workflow.  The source code has a master branch, and a stable branch.  The master branch is used for continuous integration and testing of new features.  The master branch could be thought of as the "staging" branch where we stage our developmental changes before we release it into production.  Once we are happy of the state of our master branch (all code is working properly), we pull the master branch code into the stable branch.  Production is always running code from the stable branch only.  You can read more about this workflow here [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)
 
 ### Clone and setup Ryukyu Social backend code
 
@@ -305,11 +305,10 @@ mkdir backend
 cd backend
 git clone https://github.com/riv-dev/ryukyu_social_backend.git
 ```
-3. Change the name of the folder to "ryukyu_social_backend_dev"
+3. Change the name of the folder to "ryukyu_social_backend_dev". This will be the backend used for staging and testing our developmental changes.
 ```
 mv ryukyu_social_backend ryukyu_social_backend_dev
 ```
-This will be the backend used for staging and testing our developmental changes.
 4. Now, clone the Ryukyu Social stable branch from Github.  Again make sure you are in the "backend" directory.
 ```
 git clone -b stable https://github.com/riv-dev/ryukyu_social_backend.git
