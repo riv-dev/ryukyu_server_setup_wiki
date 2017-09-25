@@ -432,6 +432,25 @@ show tables;
 ```
 10. You may check the production status similarly as above.
 
+## Download and Setup Frontend Code
+Now that the backend is setup, lets setup the front end.  The frontend is similar to the backend in that it has a "master" branch for development and a "stable" branch for production.
 
+1. Log onto the server and create a folder named "frontend" in your home directory.
+```
+cd ~/
+mkdir frontend
+```
+
+2. Change into the frontend directory and clone the master branch of Ryukyu Social frontend UI.
+```
+cd frontend
+git clone https://github.com/riv-dev/ryukyu_social_ui.git
+```
+3. Change the name of the folder to ryukyu_social_ui_dev
+```
+mv ryukyu_social_ui ryukyu_social_ui_dev
+```
+3. Go into the javascripts directory and create server_settings.js file from the server_settings.example.js file.
+```
 
 
