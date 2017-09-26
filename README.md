@@ -6,6 +6,20 @@ This tutorial assumes you have a Linux server (Ubuntu perferred).
 - [Basic Server Setup](#basic-server-setup)
 - [Add Public Key Authentication (Optional but recommended)](#add-public-key-authentication-optional-but-recommended)
 - [Disable Password Authentication (Optional but recommended)](#disable-password-authentication-optional-but-recommended)
+- [Firewall Setup for Ryukyu Social](#firewall-setup-for-ryukyu-social)
+- [Setup Swap Memory](#setup-swap-memory)
+- [Domain Name Setup](#domain-name-setup)
+- [Install NGINX, MySQL, NodeJS, and PM2](#install-nginx-mysql-nodejs-and-pm2)
+- [Configure MySQL to be able to use Japanese characters](#configure-mysql-to-be-able-to-use-japanese-characters)
+- [Install Git on the server](#install-git-on-the-server)
+- [Install Code Checker on the server](#install-code-checker-on-the-server)
+- [Download Ryukyu Social Source Code](#download-ryukyu-social-source-code)
+- [Download and Import Existing MySQL databases](#download-and-import-existing-mysql-databases)
+- [Download and Run Backend Deployment Scripts](#download-and-run-backend-deployment-scripts)
+- [Download and Setup Frontend Code](#download-and-setup-frontend-code)
+- [Setup NGINX HTTP Server](#setup-nginx-http-server)
+- [Create HTTPS certificates](#create-https-certificates)
+- [Ryukyu Social is Ready](#ryukyu-social-is-ready)
 
 ## Basic server setup
 
