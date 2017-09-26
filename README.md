@@ -2,6 +2,12 @@
 
 This tutorial assumes you have a Linux server (Ubuntu perferred).
 
+## Table of Content
+- [Basic Server Setup](#basic-server-setup)
+ - [Log in as Root](#log-in-as-root)
+ - [Create a new user](#create-a-new-user)
+ - [Root Privileges](#root-privileges)
+
 ## Basic server setup
 
 The first thing you need to do is set bare minimum settings for server security.  Here I will summarize quickly.  The original tutorial is here: [https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
