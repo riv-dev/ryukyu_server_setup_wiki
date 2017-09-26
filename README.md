@@ -500,5 +500,5 @@ Create certificates for HTTPS.  Original information can be found here [https://
 3. Edit /etc/nginx/site-enabled/default to include snippets
 4. Restart NGINX
 
-## Ryukyu Social Is Ready
+## Ryukyu Social is Ready
 At this point, everything should be setup.  You should be able to open a browser and visit https://ryukyu-ui.cleverword.com (production), or https://ryukyu-ui-dev.cleverword.com (development/testing).
