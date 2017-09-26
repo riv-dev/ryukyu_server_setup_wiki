@@ -498,3 +498,7 @@ Create certificates for HTTPS.  Original information can be found here [https://
 1. Create certificate with certbot (it will be inside /certbot/live folder as .pem, etc.)
 2. Create .conf file in /etc/nginx/snippets pointing to files above
 3. Edit /etc/nginx/site-enabled/default to include snippets
+4. Restart NGINX
+
+## Your Server Is Ready
+At this point, everything should be setup.  You should be able to open a browser and visit https://ryukyu-ui.cleverword.com (production), or https://ryukyu-ui-dev.cleverword.com (development/testing).
