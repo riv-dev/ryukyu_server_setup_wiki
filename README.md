@@ -13,7 +13,7 @@ This tutorial assumes you have a Linux server (Ubuntu perferred).
 - [Configure MySQL to be able to use Japanese characters](#configure-mysql-to-be-able-to-use-japanese-characters)
 - [Install Git on the server](#install-git-on-the-server)
 - [Install Code Checker on the server](#install-code-checker-on-the-server)
-- [Download Ryukyu Social Source Code](#download-ryukyu-social-source-code)
+- [Download Ryukyu Social Backend Source Code](#download-ryukyu-social-backend-source-code)
 - [Download and Import Existing MySQL databases](#download-and-import-existing-mysql-databases)
 - [Download and Run Backend Deployment Scripts](#download-and-run-backend-deployment-scripts)
 - [Download and Setup Frontend Code](#download-and-setup-frontend-code)
@@ -309,7 +309,7 @@ Ryukyu Social has code checker integration.  In order to use code checker, it mu
 
 1. Log onto your server and install code checker by following instructions at: [https://github.com/riv-dev/code_checker](https://github.com/riv-dev/code_checker)
 
-## Download Ryukyu Social Source Code
+## Download Ryukyu Social Backend Source Code
 Ryukyu Social uses a "master" and "stable" branch workflow.  The source code has a master branch, and a stable branch.  The master branch is used for continuous integration and testing of new features.  The master branch could be thought of as the "staging" branch where we stage our developmental changes before we release it into production.  Once we are happy of the state of our master branch (all code is working properly), we pull the master branch code into the stable branch.  Production is always running code from the stable branch only.  You can read more about this workflow here [https://gist.github.com/digitaljhelms/4287848](https://gist.github.com/digitaljhelms/4287848)
 
 ### Clone and setup Ryukyu Social backend code
