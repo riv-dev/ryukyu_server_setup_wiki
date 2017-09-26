@@ -4,9 +4,10 @@ This tutorial assumes you have a Linux server (Ubuntu perferred).
 
 ## Table of Content
 - [Basic Server Setup](#basic-server-setup)
- - [Log in as Root](#log-in-as-root)
- - [Create a new user](#create-a-new-user)
- - [Root Privileges](#root-privileges)
+  - [Log in as Root](#log-in-as-root)
+  - [Create a new user](#create-a-new-user)
+  - [Root Privileges](#root-privileges)
+- [Add Public Key Authentication (Optional but recommended)](#add-public-key-authentication-optional-but-recommended)
 
 ## Basic server setup
 
