@@ -484,7 +484,7 @@ https://github.com/riv-dev/ryukyu_social_nginx_scripts
 ```
 sudo mv ryukyu_social_nginx_scripts/default /etc/nginx/sites-available/default
 ```
-3. Open the "default" file and edit as nessacary for your server.
+3. Open the "default" file and edit as nessacary for your server.  Read the comments in the file for better understanding of each line's functionality.
 ```
 sudo vim /etc/nginx/sites-available/default
 ````
