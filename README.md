@@ -8,6 +8,7 @@ This tutorial assumes you have a Linux server (Ubuntu perferred).
   - [Create a new user](#create-a-new-user)
   - [Root Privileges](#root-privileges)
 - [Add Public Key Authentication (Optional but recommended)](#add-public-key-authentication-optional-but-recommended)
+- [Disable Password Authentication (Optional but recommended)](#disable-password-authentication-optional-but-recommended)
 
 ## Basic server setup
 
